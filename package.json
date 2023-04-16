@@ -1,0 +1,52 @@
+{
+  "name": "26-tmdb",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "antd": "^5.2.3",
+    "axios": "^1.3.4",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.9.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "^4.0.3",
+    "redux-logger": "^3.0.6",
+    "sequelize": "^6.29.0"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run server' 'npm run client'",
+    "server": "nodemon api/server.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "proxy": "http://localhost:3001",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}

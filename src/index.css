@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Tilt Neon', cursive;
+  
+  background-image: url('./img/distressed-yellow-wall-texture-background.jpg');
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body #logo{
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #264653;
+  text-shadow: 1px 1px 1px #264653;
+  transition: 0.2s;
+}
+
+body #logo:hover {
+  color: #264653;
+  text-shadow: 2px 2px 2px #264653;
+}
+
+body #profile {
+  text-decoration: none;
+  color: #264653;
+}
+body #profile:hover {
+  text-shadow: 1px 1px 1px #219ebc;
+  transition: 0.2s;
+}
+
+body #card {
+  background-color: #faedcd;
+  transition: 0.3s;
+}
+body #card:hover {
+  box-shadow: 5px 5px 5px #264653;
+}
+
+body #fixNavWidth {
+  margin-top: 5em;
+}
+
+@media screen and (max-width: 790px) {
+  body #fixNavWidth {
+    margin-top: 10em;
+  }
+}
