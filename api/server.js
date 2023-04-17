@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const db = require('./config/db');
-const models = require('./models'); // necesario, sólo una vez, raro
+const models = require('./models'); 
 const routes = require("./routes");
 
 const app = express();

@@ -26,7 +26,7 @@ const Login = () => {
       const resultado = payload.data.favorites.map(async (fav, i) => {
         const arr = fav.split("$");
         try {
-           return await axios.get(`https://api.themoviedb.org/3/${arr[1]}/${arr[0]}?api_key=ee952f0a9118ccf99452145837ab91d2`);
+           return await axios.get(`https://api.themoviedb.org/3/${arr[1]}/${arr[0]}?api_key=${process.env.REACT_APP_API_KEY}`);
         } catch (error) {
           console.error(error);
         }

@@ -8,7 +8,7 @@ const MainPage = () => {
   const dispatch = useDispatch();
   const searchList = useSelector((state) => state.search);
   const [dataSearch, setDataSearch] = useState({
-    api_key: "ee952f0a9118ccf99452145837ab91d2",
+    api_key: process.env.REACT_APP_API_KEY,
     query: "",
     language: "en-US",
     page: "1",
