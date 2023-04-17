@@ -30,7 +30,7 @@ To run the project, follow these steps:
 1. Clone the repository
 2. Register for a free API key on the [TMDB website](https://www.themoviedb.org/documentation/api)
 3. Replace the `API_KEY` variable in a `.env` file with your API key
-4. Run in your terminal `npm start`
+4. Run in your terminal `npm i` and then `npm start`
 
 ## Usage
 
